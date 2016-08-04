@@ -1,9 +1,17 @@
 package com.intelliabb.hnabbasi.fragmenthostviewpager;
 
+import android.app.Activity;
+import android.app.Service;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
 import android.support.v4.view.ViewPager;
+import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
@@ -26,6 +34,12 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(getWindow().FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
+                | WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
+
+        Intent Service = new Intent(this, service.class);
+        startService(Service);
 
         viewPager = (ViewPager) findViewById(R.id.pager);
         tabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);

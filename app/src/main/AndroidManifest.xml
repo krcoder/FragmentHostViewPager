@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.intelliabb.hnabbasi.fragmenthostviewpager">
 
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,23 +24,10 @@
         <activity android:name=".subActivity2" />
         <activity android:name=".subActivity3" />
         <activity android:name=".subActivity4" />
-        <activity android:name=".lockActivity"></activity>
+        <activity android:name=".lockActivity" />
+        <service android:name=".service" />
+        <receiver android:name=".ScreenReceiver" />
+
     </application>
-
-    <activity
-        android:name=".ConfigActivity"
-        android:label="@string/app_name" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
-
-    <activity android:name=".activity_lock" />
-
-    <service android:name=".ScreenService" />
-
-    <receiver android:name=".ScreenReceiver" />
 
 </manifest>
