@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,4 +11,61 @@
     tools:context="com.intelliabb.hnabbasi.fragmenthostviewpager.lockActivity"
     android:background="@drawable/lock2">
 
-</RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="단어가 표시 됩니다"
+            android:id="@+id/textView2"
+            android:textColor="@android:color/background_light"
+            android:paddingTop="220dp"
+            android:singleLine="false"
+            android:textSize="30dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="밀어서 잠금 해제"
+            android:id="@+id/textView3"
+            android:textColor="@android:color/background_light"
+            android:paddingTop="200dp"
+            android:singleLine="false"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:weightSum="1">
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myseek"
+            android:clickable="false"
+            android:layout_weight="0.5"
+            android:layout_gravity="bottom"
+            android:indeterminate="false"
+            android:progressDrawable="@android:color/transparent"
+            android:max="100" />
+    </LinearLayout>
+
+</LinearLayout>

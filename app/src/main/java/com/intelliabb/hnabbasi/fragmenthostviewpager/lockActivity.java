@@ -11,9 +11,12 @@ import android.os.IBinder;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.SeekBar;
+import android.widget.Toast;
 
 public class lockActivity extends Activity {
 
+    SeekBar sb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
