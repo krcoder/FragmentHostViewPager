@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "717684573789",
+    "project_id": "fragmenthostviewpager"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717684573789:android:81c7b33abfd27498",
+        "android_client_info": {
+          "package_name": "com.intelliabb.hnabbasi.fragmenthostviewpager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7de7_kbo9BX7b0jpDaVZ-cHvFj4YlqJU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

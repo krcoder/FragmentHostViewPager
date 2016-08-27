@@ -37,7 +37,7 @@
         <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OFF/ON"
+            android:text="1times / 3times"
             android:id="@+id/switch6"
             android:checked="true"
             android:paddingTop="120dp"

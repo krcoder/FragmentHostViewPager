@@ -6,6 +6,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.v4.app.FragmentActivity;
@@ -28,6 +29,7 @@ public class MainActivity extends FragmentActivity {
     ViewPager viewPager;
     private TabWidget tabWidget;
     private HorizontalScrollView horizontalScrollView;
+    String hard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +39,15 @@ public class MainActivity extends FragmentActivity {
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
                 | WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD);
-
+        SharedPreferences pref = getSharedPreferences("pref", 0);
+        hard = pref.getString("share01","empty");
+        /*
+        if(hard==null){
+            SharedPreferences.Editor edt = pref.edit();
+            edt.putString("share01", "0");
+            edt.commit();
+        }
+        */
         Intent Service = new Intent(this, service.class);
         startService(Service);
 
@@ -106,7 +116,7 @@ public class MainActivity extends FragmentActivity {
         horizontalScrollView.scrollTo(newX, 0);
     }
     private void initializeTabs() {
-        tabs = new String[] { "   소 개   ", "   영 단 어   ", "   설 정   " , "  통 계  "};
+        tabs = new String[] { "   소 개   ", "   영 단 어   ", "   설 정   "};
     }
 
     private void setupTabHost() {

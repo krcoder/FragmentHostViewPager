@@ -11,7 +11,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="뇌속의 영단어"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -27,6 +27,7 @@
         <activity android:name=".lockActivity" />
         <service android:name=".service" />
         <receiver android:name=".ScreenReceiver" />
+        <receiver android:name=".NotificationPublisher" />
 
     </application>
 
