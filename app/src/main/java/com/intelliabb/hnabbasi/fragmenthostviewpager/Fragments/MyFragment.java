@@ -111,14 +111,13 @@ public class MyFragment extends Fragment {
                             sw2.setChecked(false);
                             sw3.setChecked(false);
                             sw4.setChecked(false);
-                            Toast toast = Toast.makeText(getActivity(),"중등 영단어를 선택 하셨습니다",Toast.LENGTH_SHORT);
-                            toast.show();
-
                             SharedPreferences pref = getActivity().getSharedPreferences("pref",0);
                             //SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(getActivity());
                             SharedPreferences.Editor edt = pref.edit();
                             edt.putString("share01", "0");
                             edt.commit();
+                            Toast toast = Toast.makeText(getActivity(),"중등 영단어를 선택 하셨습니다",Toast.LENGTH_SHORT);
+                            toast.show();
                         }
                     }
                 });
@@ -130,13 +129,12 @@ public class MyFragment extends Fragment {
                             sw1.setChecked(false);
                             sw3.setChecked(false);
                             sw4.setChecked(false);
-                            Toast toast = Toast.makeText(getActivity(),"고등 영단어를 선택 하셨습니다",Toast.LENGTH_SHORT);
-                            toast.show();
-
                             SharedPreferences pref = getActivity().getSharedPreferences("pref",0);
                             SharedPreferences.Editor edt = pref.edit();
                             edt.putString("share01", "1");
                             edt.commit();
+                            Toast toast = Toast.makeText(getActivity(),"고등 영단어를 선택 하셨습니다",Toast.LENGTH_SHORT);
+                            toast.show();
                         }
                     }
                 });
@@ -148,13 +146,12 @@ public class MyFragment extends Fragment {
                             sw2.setChecked(false);
                             sw1.setChecked(false);
                             sw4.setChecked(false);
-                            Toast toast = Toast.makeText(getActivity(),"수능 영단어를 선택 하셨습니다",Toast.LENGTH_SHORT);
-                            toast.show();
-
                             SharedPreferences pref = getActivity().getSharedPreferences("pref",0);
                             SharedPreferences.Editor edt = pref.edit();
                             edt.putString("share01", "2");
                             edt.commit();
+                            Toast toast = Toast.makeText(getActivity(),"수능 영단어를 선택 하셨습니다",Toast.LENGTH_SHORT);
+                            toast.show();
                         }
                     }
                 });
@@ -166,13 +163,12 @@ public class MyFragment extends Fragment {
                             sw2.setChecked(false);
                             sw3.setChecked(false);
                             sw1.setChecked(false);
-                            Toast toast = Toast.makeText(getActivity(),"토익 영단어를 선택 하셨습니다",Toast.LENGTH_SHORT);
-                            toast.show();
-
                             SharedPreferences pref = getActivity().getSharedPreferences("pref",0);
                             SharedPreferences.Editor edt = pref.edit();
                             edt.putString("share01", "3");
                             edt.commit();
+                            Toast toast = Toast.makeText(getActivity(),"토익 영단어를 선택 하셨습니다",Toast.LENGTH_SHORT);
+                            toast.show();
                         }
                     }
                 });
@@ -213,23 +209,20 @@ public class MyFragment extends Fragment {
                     @Override
                     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                         if(b){
-
-                            Toast toast = Toast.makeText(getActivity(),"영어실력 향상을 위해 알림을 받습니다",Toast.LENGTH_SHORT);
-                            toast.show();
-
                             SharedPreferences pref = getActivity().getSharedPreferences("pref",0);
                             SharedPreferences.Editor edt = pref.edit();
                             edt.putString("share02", "0");
                             edt.commit();
+                            Toast toast = Toast.makeText(getActivity(),"영어실력 향상을 위해 알림을 받습니다",Toast.LENGTH_SHORT);
+                            toast.show();
                         }
                         else{
-                            Toast toast = Toast.makeText(getActivity(),"더이상 알림을 받지 않습니다",Toast.LENGTH_SHORT);
-                            toast.show();
-
                             SharedPreferences pref = getActivity().getSharedPreferences("pref",0);
                             SharedPreferences.Editor edt = pref.edit();
                             edt.putString("share02", "1");
                             edt.commit();
+                            Toast toast = Toast.makeText(getActivity(),"더이상 알림을 받지 않습니다",Toast.LENGTH_SHORT);
+                            toast.show();
                         }
                     }
                 });
@@ -240,22 +233,20 @@ public class MyFragment extends Fragment {
 
                         if(b){
 
-                            Toast toast = Toast.makeText(getActivity(),"영어실력 향상을 위해 3번의 터치를 해야됩니다",Toast.LENGTH_SHORT);
-                            toast.show();
-
                             SharedPreferences pref = getActivity().getSharedPreferences("pref",0);
                             SharedPreferences.Editor edt = pref.edit();
                             edt.putString("share03", "0");
                             edt.commit();
+                            Toast toast = Toast.makeText(getActivity(),"영어실력 향상을 위해 3번의 터치를 해야됩니다",Toast.LENGTH_SHORT);
+                            toast.show();
                         }
                         else{
-                            Toast toast = Toast.makeText(getActivity(),"한번의 터치로 잠금해제를 합니다",Toast.LENGTH_SHORT);
-                            toast.show();
-
                             SharedPreferences pref = getActivity().getSharedPreferences("pref",0);
                             SharedPreferences.Editor edt = pref.edit();
                             edt.putString("share03", "1");
                             edt.commit();
+                            Toast toast = Toast.makeText(getActivity(),"한번의 터치로 잠금해제를 합니다",Toast.LENGTH_SHORT);
+                            toast.show();
                         }
                     }
                 });

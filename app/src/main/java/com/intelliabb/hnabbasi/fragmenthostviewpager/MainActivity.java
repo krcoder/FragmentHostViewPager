@@ -116,7 +116,7 @@ public class MainActivity extends FragmentActivity {
         horizontalScrollView.scrollTo(newX, 0);
     }
     private void initializeTabs() {
-        tabs = new String[] { "   소 개   ", "   영 단 어   ", "   설 정   "};
+        tabs = new String[] { "   소 개   ", "   영 단 어   ", "   설 정   ", "   특 징   "};
     }
 
     private void setupTabHost() {

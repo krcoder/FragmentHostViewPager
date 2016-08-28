@@ -8,6 +8,6 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.intelliabb.hnabbasi.fragmenthostviewpager.subActivity4"
-    android:background="@drawable/main4">
+    android:background="@drawable/proper">
 
 </RelativeLayout>
